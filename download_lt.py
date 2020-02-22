@@ -54,6 +54,7 @@ def parse_java_version(version_text):
     (1, 8)
 
     """
+    print(f'Searching java version from version_text: `{version_text}`.')
     match = re.search(JAVA_VERSION_REGEX, version_text)
     if not match:
         raise SystemExit(
